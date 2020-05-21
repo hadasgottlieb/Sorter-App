@@ -19,6 +19,18 @@ h1 {
     margin-top: 10px;
 }
 
+#inputs, #orders {
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    background-color: black;
+}
+
+#inputs:focus, #orders:focus {
+    outline: none;
+}
+
 input {
     font-size: 20px;
     font-weight: bold;
@@ -52,4 +64,8 @@ button {
     word-break: break-all;
     color: rgb(172, 90, 248);
     font-weight: 100;
+}
+
+.inactive {
+    display: none;
 }

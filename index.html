@@ -14,9 +14,20 @@
     <div class = "app-container">
         <div class = "form-container">
             <h1><i class="fas fa-signal"></i> Sorter</h1>
-            <h2>Enter any number. <br>The digits will be sorted into ascending order. <br>Isn't that nice?</h2>
+            <h2>Enter any 
+                <select name="inputs" id="inputs">
+                    <option value="number">number</option>
+                    <option value="word">word</option> 
+                </select>
+                . <br>The <span class = "input-parts">digits</span> will be sorted into 
+                <select name = "orders" id = "orders">
+                    <option value="ascending" id = "orders-option1">ascending</option>
+                    <option value="descending" id = "orders-option2">descending</option>
+                </select> 
+                order. <br>Isn't that nice?</h2>
             <label for="number-input"></label>
             <input type="number" id = "number-input">
+            <input type="text" id = "text-input" class = "inactive">
             <button id = "submit-button">Sort</button>    
         </div>
         <div class = "output-container">
